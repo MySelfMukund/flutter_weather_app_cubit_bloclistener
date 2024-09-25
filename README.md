@@ -36,7 +36,7 @@ Ensure you have the following installed:
    flutter pub get
 
 4. Get the API Key from [OpenWeatherMap](https://home.openweathermap.org/api_keys) and store in the **.env file**
-<img width="698" alt="Screenshot 2024-09-25 at 9 16 08 AM" src="https://github.com/user-attachments/assets/d6c87bde-1fbe-423f-ae75-a00ea76f78c8">
+<img width="600" alt="Screenshot 2024-09-25 at 9 16 08 AM" src="https://github.com/user-attachments/assets/d6c87bde-1fbe-423f-ae75-a00ea76f78c8">
 
 5. Run the app:
    ```bash
@@ -58,19 +58,20 @@ Here's an overview of the project folder structure:
 ## How It Works
 
 - **Bloc Pattern** used to manage the state of the weather data and UI updates.
-- **StreamSubscription** allows the app to listen for changes in weather data in real-time, ensuring users always receive the latest updates.
+- **BlocListener** allows the app to listen for changes in weather data in real-time, ensuring users always receive the latest updates.
 - **Repository Layer** abstracts the API interactions, handling requests and responses for fetching weather data.
 
 ## State Management
 
 - **Bloc/Cubit:** Manages the application's state changes for loading, success, and error conditions when fetching weather data.
-- **StreamSubscription:** Provides real-time updates on weather data changes, keeping the UI in sync with the latest information.
+- **BlocListener:** Provides real-time updates on weather data changes, keeping the UI in sync with the latest information.
 
 ## Technologies Used
 
 - **Flutter** - Cross-platform development framework
 - **Bloc (Cubit)** - State management
-- **StreamSubscription** - For making API requests to fetch weather data
+- **BlocListener** - For listening and handling real-time data updates
+- **HTTP** - For making API requests to fetch weather data.
 
 ## Testing
 - **Unit Testing**: Writting unit tests for Cubits and repository logic. **(coming soon...)**
